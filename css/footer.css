@@ -1,0 +1,35 @@
+footer {
+    background-color: rgb(82, 82, 82);
+    /*position: sticky;*/
+    width: 100%;
+    bottom: 0;
+}
+
+footer h2, footer a {
+    color: black !important;
+}
+
+footer > .group-items {
+    text-align: center;
+}
+
+footer .div-contact {
+    margin-top: 0;
+    display: inline-block;
+    justify-content: center;
+}
+
+footer .container img {
+    opacity: 60%;
+    width: 3rem;
+    margin-left: 0.6rem;
+    max-width: 38px;
+    max-height: 38px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .contact-text, footer a {
+    margin-left: 5px;
+    margin-right: 5px;
+}

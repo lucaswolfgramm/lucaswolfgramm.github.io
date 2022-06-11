@@ -1,0 +1,83 @@
+body {
+    color: rgb(167, 255, 255) !important;
+}
+
+.profile-photo {
+    margin-top: 50px;
+    margin-left: 50px;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.intro {
+    /*background-image: url(img/capa.png);
+    background-position: top !important;*/
+    height: 230px;
+    text-align: center;
+}
+
+.intro > .group-items {
+    margin-top: 20px;
+}
+
+
+section[class*="section-"] {
+    margin-left: 50px;
+    margin-right: 50px !important;
+}
+
+section[class*="section-"] .paragraph, section[class*="section-"] .timeline{
+    margin-left: 20px;
+}
+
+hr {
+    margin-top: 0;
+    width: 100%;
+}
+
+.intro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(168, 168, 168);
+}
+
+section[class*="section-"] p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(168, 168, 168);
+    text-align: justify;
+}
+
+.timeline p {
+    color: rgb(168, 168, 168) !important;
+}
+
+.timeline {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 90%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
