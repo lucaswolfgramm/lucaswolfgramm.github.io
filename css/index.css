@@ -4,6 +4,11 @@ body {
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 56, 68, 1) 100%);
 }
 
+#navbar {
+    position: fixed;
+    margin-left: 10px;
+}
+
 .profile-photo {
     margin-top: 50px;
     margin-left: 50px;
@@ -23,15 +28,12 @@ body {
     margin-top: 20px;
 }
 
-
-section[class*="section-"] {
-    margin-left: 50px;
-    margin-right: 50px !important;
-}
-
-section[class*="section-"] .paragraph,
-section[class*="section-"] .timeline {
-    margin-left: 20px;
+.intro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(168, 168, 168);
 }
 
 hr {
@@ -39,12 +41,21 @@ hr {
     width: 100%;
 }
 
-.intro p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: rgb(168, 168, 168);
+section[class*="section-"] {
+    margin-left: 100px;
+    margin-right: 50px !important;
+}
+
+section[class*="section-"] > .title{
+    margin-bottom: 20px;
+}
+
+section[class*="section-"] .group {
+    margin-left: 40px;
+}
+
+section[class*="section-"] .timeline {
+    margin-left: 20px;
 }
 
 section[class*="section-"] p {
@@ -55,6 +66,32 @@ section[class*="section-"] p {
     color: rgb(168, 168, 168);
     text-align: justify;
 }
+
+/*----------------------------*/
+/*----------------------------*/
+
+.timeline2 {
+    border-left: 1px solid hsl(0, 100%, 100%);
+    position: relative;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.timeline2 .timeline-item {
+    position: relative;
+    margin-left: -48px;
+}
+
+.timeline2 i, .timeline2 svg {
+    background-color: rgb(3, 4, 5) !important;
+    border-radius: 50%;
+    color: rgb(167, 255, 255) !important;
+    width: 30px;
+    height: 30px;
+}
+
+/*----------------------------*/
+/*----------------------------*/
 
 .timeline p {
     color: rgb(168, 168, 168) !important;
@@ -83,4 +120,16 @@ section[class*="section-"] p {
     height: 11px;
     width: 11px;
     content: "";
+}
+
+.timeline p {
+    font-size: 1rem !important;
+}
+
+.section-skills .subgroup {
+    margin-bottom: 20px;
+}
+
+.section-skills .subgroup .progress {
+    max-width: 300px;
 }
