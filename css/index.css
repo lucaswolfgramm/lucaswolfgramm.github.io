@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     color: rgb(240, 241, 241) !important;
-    background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 56, 68, 1) 100%);
 }
 
@@ -41,11 +46,12 @@ section[class*="section-"] {
     margin-right: 80px !important;
 }
 
-section[class*="section-"] > .title{
+section[class*="section-"]>.title {
     margin-bottom: 20px;
 }
 
-section[class*="section-"] .group {
+section[class*="section-"] .group,
+#aboutMe p {
     margin-left: 40px;
 }
 
@@ -65,10 +71,6 @@ section[class*="section-"] p {
 
 section[class*="section-"] i {
     color: rgb(167, 255, 255) !important;
-}
-
-#aboutMe p {
-    margin-left: 40px;
 }
 
 /*----------------------------*/
