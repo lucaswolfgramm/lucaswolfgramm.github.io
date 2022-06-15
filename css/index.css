@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: rgb(240, 241, 241) !important;
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 56, 68, 1) 100%);
@@ -37,7 +41,8 @@ body {
 }
 
 hr {
-    margin-top: 0;
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
     width: 100%;
 }
 
