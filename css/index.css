@@ -44,7 +44,7 @@ hr {
 
 section[class*="section-"] {
     margin-left: 40px;
-    margin-right: 80px !important;
+    margin-right: 95px !important;
 }
 
 section[class*="section-"]>.title {
@@ -76,29 +76,27 @@ section[class*="section-"] i {
 
 /*----------------------------*/
 /*----------------------------*/
-
-#navbar {
+#myScrollspy {
     position: fixed;
     right: 10px;
-    margin-top: 20px;
+    width: auto;
+    z-index: 1;
 }
 
-.timeline-nav {
+.list-group{
     border-left: 1px solid hsl(0, 100%, 100%);
     position: relative;
     margin-left: 30px;
     list-style: none;
 }
 
-.timeline-nav .timeline-item {
+.list-group [class*="list-group-item"] {
     position: relative;
-    margin-left: -48px;
+    margin-left: -33px;
+    border-radius: 50%;
 }
 
-.timeline-nav svg {
-    background-color: rgb(3, 4, 5);
-    border-radius: 50%;
-    color: rgb(167, 255, 255) !important;
+.list-group svg {
     width: 30px;
     height: 30px;
 }
