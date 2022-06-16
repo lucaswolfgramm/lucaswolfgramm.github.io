@@ -1,16 +1,17 @@
 footer {
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(122, 121, 121);
     /*position: sticky;*/
     width: 100%;
     bottom: 0;
     margin-top: 40px;
 }
 
-footer h2, footer a {
+footer h2,
+footer a {
     color: black !important;
 }
 
-footer > .group-items {
+footer>.group-items {
     text-align: center;
 }
 
@@ -30,7 +31,8 @@ footer .container img {
     margin-bottom: 1rem;
 }
 
-footer .contact-text, footer a {
+footer .contact-text,
+footer a {
     margin-left: 5px;
     margin-right: 5px;
 }

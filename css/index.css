@@ -14,22 +14,18 @@ body {
 }
 
 .profile-photo {
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 100px;
-    height: 100px;
+    margin: 20px 0 5px 20px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .intro {
-    /*background-image: url(img/capa.png);
+    /*background-image: url(img/capa.png) !important;
     background-position: top !important;*/
-    height: 230px;
+    height: 270px;
     text-align: center;
-}
-
-.intro>.group-items {
-    margin-top: 20px;
+    z-index: 1;
 }
 
 .intro p {
