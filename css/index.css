@@ -11,6 +11,12 @@ html {
 body {
     color: rgb(240, 241, 241) !important;
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 56, 68, 1) 100%);
+    position: relative !important;
+}
+
+.row > div {
+    display: inline-block;
+    align-content: center;
 }
 
 .profile-photo {
@@ -34,6 +40,8 @@ body {
     font-weight: 300;
     line-height: 1.7em;
     color: rgb(255, 254, 254);
+    margin-left: 40px !important;
+    margin-right: 95px !important;
 }
 
 hr {
@@ -44,7 +52,7 @@ hr {
 
 section[class*="section-"] {
     margin-left: 40px;
-    margin-right: 95px !important;
+    margin-right: 80px !important;
 }
 
 section[class*="section-"]>.title {
@@ -53,7 +61,7 @@ section[class*="section-"]>.title {
 
 section[class*="section-"] .group,
 #aboutMe p {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 section[class*="section-"] .timeline {
@@ -76,9 +84,11 @@ section[class*="section-"] i {
 
 /*----------------------------*/
 /*----------------------------*/
+
 #myScrollspy {
     position: fixed;
-    right: 10px;
+    right: 20px;
+    margin-top: 250px;
     width: auto;
     z-index: 1;
 }
@@ -141,4 +151,5 @@ section[class*="section-"] i {
 
 .section-skills .subgroup .progress {
     max-width: 300px;
+    margin-right: 20px;
 }

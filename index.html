@@ -12,27 +12,11 @@
     <meta name="author" content="Lucas Wolfgramm">
 
     <link rel="stylesheet" href="css/index.css">
-    <style>
-        body {
-            position: relative;
-            /* required */
-        }
-    </style>
 </head>
 
-<body class="main bg-dark" data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="270"
-    style="position: relative !important;">
-    <header id="home" class="intro">
-        <div class="group-items">
-            <img class="profile-photo" src="img/me.png" alt="Foto de Lucas">
-            <h3 class="name">Lucas Wolfgramm</h3>
-            <p class="opacity-50">Analista de testes | Qualidade de Software | QA | Quality Assurance at Linx</p>
-        </div>
-    </header>
-
-
+<body class="main bg-dark" data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="270">
     <div class="row">
-        <div class="col-sm-3" id="myScrollspy">
+        <div class="content" id="myScrollspy">
             <div class="list-group">
                 <a class="list-group-item active" href="#home">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -92,9 +76,17 @@
             </div>
         </div>
 
-        <hr>
+        <div class="content">
+            <header id="home" class="intro">
+                <div class="group-items">
+                    <img class="profile-photo" src="img/me.png" alt="Foto de Lucas">
+                    <h3 class="name">Lucas Wolfgramm</h3>
+                    <p class="opacity-50">Analista de testes | Qualidade de Software | QA | Quality Assurance at Linx</p>
+                </div>
+            </header>
 
-        <div class="col-sm-9">
+            <hr>
+
             <section id="aboutMe" class="section-about-me">
                 <h2 class="title">
                     <i class="bi bi-person"></i>
@@ -109,9 +101,7 @@
                         Senac.</p>
                 </div>
             </section>
-
             <hr>
-
             <section id="timeline" class="section-timeline">
                 <h2 class="title">
                     <i class="bi bi-building"></i>
