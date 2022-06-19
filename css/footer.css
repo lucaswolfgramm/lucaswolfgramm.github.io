@@ -13,12 +13,17 @@ footer a {
 
 footer>.group-items {
     text-align: center;
+    padding-top: 50px;
 }
 
 footer .div-contact {
     margin-top: 0;
     display: inline-block;
     justify-content: center;
+}
+
+footer .container {
+    margin-top: 30px;
 }
 
 footer .container img {

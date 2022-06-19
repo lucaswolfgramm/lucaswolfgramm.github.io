@@ -256,32 +256,6 @@
             $("#footer").load("footer.html");
         });
 
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) { //loop em todos os elementos atingidos
-                const { isIntersecting, intersectionRatio } = entry;
-                if (isIntersecting === true || intersectionRatio > 0) {
-                    montaSeletor = "[href='#" + entry.target.getAttribute('id').toString() + "']";
-                    changeBackground(document.querySelector(montaSeletor))
-                    //observer.unobserve(entry.target); // se você só precisar do event uma vez utilize essa linha
-                }
-            });
-        }, { threshold: [0] });
-
-        const changeBackground = (element) => {
-            elemento = element.children[0]
-            all = document.querySelectorAll(".timeline-nav svg");
-
-            for (i = 0; i < all.length; i++) {
-                all[i].style.backgroundColor = "black";
-            }
-            elemento.style.backgroundColor = 'gray';
-        }
-
-        // observer.observe(document.querySelector("#aboutMe"));
-        // observer.observe(document.querySelector("#timeline"));
-        // observer.observe(document.querySelector("#knowledge"));
-        // observer.observe(document.querySelector("#skills"));
-        // observer.observe(document.querySelector("#hobbies"))
 
 
     </script>
