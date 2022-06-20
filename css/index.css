@@ -14,11 +14,6 @@ body {
     position: relative !important;
 }
 
-.row > div {
-    display: inline-block;
-    align-content: center;
-}
-
 .profile-photo {
     margin: 20px 0 5px 20px;
     width: 200px;
@@ -28,8 +23,6 @@ body {
 }
 
 .intro {
-    /*background-image: url(img/capa.png) !important;
-    background-position: top !important;*/
     height: 270px;
     text-align: center;
     z-index: 1;
@@ -97,13 +90,11 @@ section[class*="section-"] i {
 
 .list-group{
     border-left: 1px solid hsl(0, 100%, 100%);
-    position: relative;
     margin-left: 30px;
     list-style: none;
 }
 
 .list-group [class*="list-group-item"] {
-    position: relative;
     margin-left: -33px;
     border-radius: 50%;
 }
