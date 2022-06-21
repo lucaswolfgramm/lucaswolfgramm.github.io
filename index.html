@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="main bg-dark" data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="270">
+<body class="main bg-dark" data-bs-spy="scroll" data-bs-target="#navBar" data-bs-offset="270">
     <div class="row">
-        <div class="content" id="myScrollspy">
+        <div class="content" id="navBar">
             <div class="list-group">
-                <a class="list-group-item active" href="#home">
+
+                <a class="list-group-item" href="#home">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-house" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -81,7 +82,8 @@
                 <div class="group-items">
                     <img class="profile-photo" src="img/me.png" alt="Foto de Lucas">
                     <h3 class="name">Lucas Wolfgramm</h3>
-                    <p class="opacity-50">Analista de testes | Qualidade de Software | QA | Quality Assurance at Linx</p>
+                    <p class="opacity-50">Analista de testes | Qualidade de Software | QA | Quality Assurance at Linx
+                    </p>
                 </div>
             </header>
 
@@ -242,7 +244,6 @@
                 </div>
             </section>
         </div>
-        
 
         <div id="footer"></div>
     </div>
@@ -256,9 +257,6 @@
         $(document).ready(function () {
             $("#footer").load("footer.html");
         });
-
-
-
     </script>
 </body>
 
