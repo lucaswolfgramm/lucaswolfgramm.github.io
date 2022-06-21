@@ -77,35 +77,30 @@ section[class*="section-"] i {
     color: rgb(167, 255, 255) !important;
 }
 
-/*----------------------------*/
-/*----------------------------*/
-
-#myScrollspy {
+#navBar {
     position: fixed;
-    right: 20px;
+    right: 8px;
     margin-top: 250px;
     width: auto;
     z-index: 1;
+    height: 100%;
 }
 
-.list-group{
-    border-left: 1px solid hsl(0, 100%, 100%);
+#navBar .list-group {
+    border-left: 2px solid hsl(0, 100%, 100%);
     margin-left: 30px;
     list-style: none;
 }
 
-.list-group [class*="list-group-item"] {
-    margin-left: -33px;
+#navBar a {
+    margin-left: -30px;
     border-radius: 50%;
 }
 
-.list-group svg {
-    width: 30px;
-    height: 30px;
+#navBar svg {
+    width: 22px;
+    height: 32px;
 }
-
-/*----------------------------*/
-/*----------------------------*/
 
 .timeline p {
     color: rgb(168, 168, 168) !important;
