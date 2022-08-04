@@ -1,9 +1,13 @@
+
+footer {
+    grid-area: f;
+    margin-bottom: 0;
+}
+
 footer {
     background-color: rgb(122, 121, 121);
-    /*position: sticky;*/
     width: 100%;
     bottom: 0;
-    margin-top: 40px;
 }
 
 footer h2,
@@ -13,7 +17,7 @@ footer a {
 
 footer>.group-items {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 footer .div-contact {
@@ -23,7 +27,7 @@ footer .div-contact {
 }
 
 footer .container {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 footer .container img {
@@ -32,8 +36,7 @@ footer .container img {
     margin-left: 0.6rem;
     max-width: 38px;
     max-height: 38px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.1rem;
 }
 
 footer .contact-text,

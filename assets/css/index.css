@@ -1,11 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -14,19 +9,32 @@ body {
     position: relative !important;
 }
 
+.container_main {
+    display: grid;
+    grid-template-columns: calc(100% - 70px) 70px;
+    grid-template-rows: 350px calc(100% - 350px - 200px) 200px;
+    grid-template-areas: "h a" "m a" "f f";
+}
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
 .profile-photo {
-    margin: 20px 0 5px 20px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-top: 18px;
     margin-bottom: 8px;
 }
 
 .intro {
-    height: 270px;
     text-align: center;
     z-index: 1;
-    margin-top: 30px;
 }
 
 .intro p {
@@ -35,19 +43,17 @@ body {
     font-weight: 300;
     line-height: 1.7em;
     color: rgb(255, 254, 254);
-    margin-left: 40px !important;
-    margin-right: 95px !important;
+    margin-left: 20px !important;
 }
 
 hr {
-    margin-top: 80px !important;
-    margin-bottom: 80px !important;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
     width: 100%;
 }
 
 section[class*="section-"] {
     margin-left: 40px;
-    margin-right: 80px !important;
 }
 
 section[class*="section-"]>.title {
@@ -68,13 +74,17 @@ section[class*="section-"] p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: rgb(168, 168, 168);
+    color: rgb(161, 161, 161) !important;
     text-align: justify;
     width: 90%;
 }
 
 section[class*="section-"] i {
     color: rgb(167, 255, 255) !important;
+}
+
+aside {
+    grid-area: a;
 }
 
 #navBar {
@@ -100,46 +110,6 @@ section[class*="section-"] i {
 #navBar svg {
     width: 22px;
     height: 32px;
-}
-
-.timeline p {
-    color: rgb(168, 168, 168) !important;
-    font-size: 1rem !important;
-    margin-right: 0 !important;
-}
-
-.timeline {
-    border-left: 1px solid hsl(0, 0%, 90%);
-    position: relative;
-    list-style: none;
-}
-
-.timeline .timeline-item {
-    position: relative;
-}
-
-.timeline .timeline-item:after {
-    position: absolute;
-    display: block;
-    top: 0;
-}
-
-.timeline .timeline-item:after {
-    background-color: hsl(0, 0%, 90%);
-    left: -38px;
-    border-radius: 50%;
-    height: 11px;
-    width: 11px;
-    content: "";
-}
-
-.section-skills .subgroup {
-    margin-bottom: 20px;
-}
-
-.section-skills .subgroup .progress {
-    max-width: 300px;
-    margin-right: 20px;
 }
 
 #projetos .projectCard {
