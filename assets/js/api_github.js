@@ -7,7 +7,7 @@ const headers = new Headers();
 headers.append('Authorization', "token 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")
 
 const getPerfil = () => {
-    fetch('https://api.github.com/users/lucaswolfgramm', { headers: headers})
+    fetch('https://api.github.com/users/lucaswolfgramm', { header: headers})
     .then(response => response.json())
     .then(data => {
         //console.log(data);
@@ -20,7 +20,7 @@ const getPerfil = () => {
 }
 
 const getRepo = (repoName) => {
-    fetch('https://api.github.com/repos/lucaswolfgramm/' + repoName)
+    fetch('https://api.github.com/repos/lucaswolfgramm/' + repoName, { header: headers})
     .then(response => response.json())
     .then(data => {
         //console.log(data);
