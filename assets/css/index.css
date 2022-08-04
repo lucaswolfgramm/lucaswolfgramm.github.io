@@ -65,6 +65,12 @@ section[class*="section-"] .group,
     margin-left: 20px;
 }
 
+@media screen and (min-width: 1000px){
+    .section-skills .subgroup {
+        width: 50%;
+    }
+}
+
 section[class*="section-"] .timeline {
     margin-left: 20px;
 }
@@ -112,13 +118,26 @@ aside {
     height: 32px;
 }
 
-#projetos .projectCard {
-    margin-top: 50px;
+#projetos [class*="projectCard"] {
     display: inline-block;
     justify-content: center;
     border-color: aliceblue;
+    margin: 5px;
 }
 
-.projectCard .card-title {
+[class*="projectCard"] .card-title {
     margin-top: 0 !important;
+    text-align: center;
+}
+
+[class*="projectCard"] a {
+    bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end !important;
+}
+
+[class*="projectCard"] .card-text {
+    text-align: center;
+    margin: 5px 0 5px 5px;
 }
