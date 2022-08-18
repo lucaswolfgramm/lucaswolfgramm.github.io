@@ -3,11 +3,13 @@ function renderiza_foto(foto) {
     img_foto.src = `${foto}`
 }
 
-const headers = new Headers();
-headers.append('Authorization', ${{ secrets.GITHUB_TOKEN_KEY }})
+//const headers = new Headers();
+//headers.append('Authorization', "token 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" )
 
 const getPerfil = () => {
-    fetch('https://api.github.com/users/lucaswolfgramm', { header: headers})
+    fetch('https://api.github.com/users/lucaswolfgramm'
+          //, { header: headers}
+         )
     .then(response => response.json())
     .then(data => {
         //console.log(data);
