@@ -4,7 +4,7 @@ function renderiza_foto(foto) {
 }
 
 const headers = new Headers();
-headers.append('Authorization', "token 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")
+headers.append('Authorization', ${{ secrets.GITHUB_TOKEN_KEY }})
 
 const getPerfil = () => {
     fetch('https://api.github.com/users/lucaswolfgramm', { header: headers})
