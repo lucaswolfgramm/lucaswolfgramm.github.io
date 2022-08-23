@@ -3,12 +3,12 @@ function renderiza_foto(foto) {
     img_foto.src = `${foto}`
 }
 
-//const headers = new Headers();
-//headers.append('Authorization', "token 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" )
+const headers = new Headers();
+headers.append('Authorization', "token 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" )
 
 const getPerfil = () => {
     fetch('https://api.github.com/users/lucaswolfgramm'
-          //, { header: headers}
+          , { header: headers}
          )
     .then(response => response.json())
     .then(data => {
