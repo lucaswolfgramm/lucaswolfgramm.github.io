@@ -118,11 +118,16 @@ aside {
     height: 32px;
 }
 
-#projetos [class*="projectCard"] {
+#projetosContainer {
     display: inline-block;
-    justify-content: center;
+}
+
+#projetosContainer [class*="projectCard"] { 
+    display: inline-table;
     border-color: aliceblue;
     margin: 5px;
+    height: 190px;
+    position: relative;
 }
 
 [class*="projectCard"] .card-title {
@@ -131,10 +136,9 @@ aside {
 }
 
 [class*="projectCard"] a {
-    bottom: 0 !important;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end !important;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
 }
 
 [class*="projectCard"] .card-text {
