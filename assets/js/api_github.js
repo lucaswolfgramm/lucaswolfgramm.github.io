@@ -42,5 +42,5 @@ getRepo('AluraCourses');
 getRepo('operand-is-cool-projects-2017');
 getRepo('ImersaoJavaAlura');
 getRepo('componentesReact');
-createCard("Grupo Prestes", "Site desenvolvido para uma empresa de soluções logísticas sediada em Joinville", "https://grupoprestes.000webhostapp.com/");
+createCard("Grupo Prestes", "Site desenvolvido para uma empresa de soluções logísticas sediada em Joinville", "../assets/img/GrupoPrestes.gif");
 createCard("Vitrine Online", "Plataforma de vendas para pequenos e médios empreendedores", "https://github.com/lucaswolfgramm/vitrineOnline-preview/blob/main/readme.md");
